@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дмитрий Шворнев](https://up.htmlacademy.ru/htmlcss/30/user/1646517).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Лесухин](https://htmlacademy.ru/profile/caneklis).
 
 ---
 
