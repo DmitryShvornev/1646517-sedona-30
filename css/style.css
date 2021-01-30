@@ -1,0 +1,223 @@
+/* Fonts */
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans.woff2") format("woff2"), url("../fonts/PTSans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/PTSans-Bold.woff2") format("woff2"), url("../fonts/PTSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Global */
+
+.page-body {
+  min-width: 1280px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  background-image: url("../img/index-background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Variables */
+:root {
+  --basic-white: #ffffff;
+  --basic-lightblue: #81b3d2;
+  --basic-dark: #766357;
+  --basic-grey: #eeeeee;
+  --basic-lightgrey: #f2f2f2;
+  --basic-black: #000000;
+
+  --special-extra-lightblue:  #669ec0;
+  --special-deep-lightblue: #5496bd;
+  --special-extra-dark: #604e43;
+  --special-deep-dark: #503e33;
+  --special-extra-lightgrey: #ebebeb;
+  --special-deep-lightgrey: #e5e5e5;
+  --special-neutral: #a9a9a9;
+  --special-black: #333333;
+  --special-darkgrey: #6a6a6a;
+  --special-lightgrey: #cacaca;
+}
+
+.description {
+  color: var(--special-black);
+  font-weight: 400;
+}
+
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover {
+  color: var(--basic-lightblue);
+}
+
+.site-navigation a:focus {
+  color: var(--special-neutral);
+}
+
+/* Features */
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item h3 {
+  font-size: 21px;
+  color: var(--basic-white);
+}
+
+.feature-item {
+  background-color: var(--basic-lightblue);
+  color: var(--basic-white);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.feature-item-no-pic h3 {
+  font-size: 21px;
+  color: var(--basic-black);
+}
+
+.feature-item-no-pic {
+  background-color: var(--basic-grey);
+  color: var(--special-black);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.subfeatures-list{
+  list-style: none;
+  background-color: var(--basic-white);
+}
+
+.subfeatures-item h3 {
+  font-size: 21px;
+  color: var(--basic-black);
+}
+
+.subfeatures-item {
+  color: var(--special-black);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Hotel */
+
+.hotel h2 {
+  background-color: var(--basic-dark);
+  color: var(--basic-white);
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotel h2:hover {
+  background-color: var(--special-extra-dark);
+  color: var(--basic-white);
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotel h2:focus {
+  background-color: var(--special-deep-dark);
+  color: var(--basic-white);
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotel {
+  color: var(--special-black);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.hotel-interest {
+  color: var(--basic-black);
+  font-size: 30px;
+  line-height: 24px;
+}
+
+/* Footer */
+
+.footer-contacts {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.footer-contacts a {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.footer-socials ul {
+  list-style: none;
+}
+
+.social-button {
+  background-color: var(--basic-lightblue);
+  color: var(--basic-white);
+  text-decoration: none;
+}
+
+.social-button:hover {
+  background-color: var(--special-extra-lightblue);
+}
+
+.social-button:focus {
+  background-color: var(--special-deep-lightblue);
+}
+
+.footer-copyright {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.footer-copyright a {
+  color: var(--basic-black);
+}
+
+.footer-copyright a:hover {
+  color: var(--basic-lightblue);
+}
+
+.footer-copyright a:focus {
+  color: var(--special-lightgrey);
+}
