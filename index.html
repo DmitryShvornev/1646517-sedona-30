@@ -9,7 +9,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body class="page-body">
+  <body class="container">
 
     <header class="main-header">
       <nav class="main-navigation">
@@ -25,7 +25,7 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main>
       <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p class="description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <section class="features">
@@ -81,7 +81,15 @@
         <h2>Поиск гостиницы в Седоне</h2>
         <p><strong class="hotel-interest">Заинтересовались?</strong></p>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-        <!--Форма поиска гостиницы -->
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <p>Дата заезда: <input type="date" name="arrival" value="2017-04-24"></p>
+          <p>Дата выезда: <input type="date" name="departure" value="2017-07-04"></p>
+          <p>
+            Взрослые: <input type="number" name="adults" value="2" min="1" max="3" step="1">
+            Дети: <input type="number" name="children" value="2" min="1" max="3" step="1">
+          </p>
+          <button class="hotel-find-button" type="submit">Найти</button>
+        </form>
       </section>
 
     </main>

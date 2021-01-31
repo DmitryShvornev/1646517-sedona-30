@@ -15,10 +15,12 @@
 
 /* Global */
 
-.page-body {
+.container {
   min-width: 1280px;
   margin: 0;
   padding: 0;
+  text-align: center;
+  box-shadow: none;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -29,6 +31,10 @@
   background-image: url("../img/index-background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+.catalog-container {
+    background-image: none;
 }
 
 a {
@@ -78,6 +84,8 @@ img {
 
 .site-navigation {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation a {
@@ -138,7 +146,7 @@ img {
   font-weight: 400;
 }
 
-/* Hotel */
+/* Hotel search */
 
 .hotel h2 {
   background-color: var(--basic-dark);
@@ -159,6 +167,8 @@ img {
   color: var(--basic-white);
   font-size: 21px;
   line-height: 26px;
+  mix-blend-mode: normal;
+  opacity: 0.3;
 }
 
 .hotel {
@@ -171,6 +181,161 @@ img {
   color: var(--basic-black);
   font-size: 30px;
   line-height: 24px;
+}
+
+.hotel-find-button {
+  color: var(--basic-white);
+  background-color: var(--basic-lightblue);
+  border: none;
+  width: 458px;
+  height: 58px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.hotel-find-button:hover{
+  background-color: var(--special-extra-lightblue);
+}
+
+.hotel-find-button:focus{
+  background-color: var(--special-deep-lightblue);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+/* Hotel filter */
+
+.hotel-filter {
+  color: var(--basic-white);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--basic-lightblue);
+  background-image: url("../img/index-background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.hotel-fieldset {
+  border: none;
+}
+
+.hotel-filter-legend {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.hotel-filter-feature-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-show {
+  background-color: transparent;
+  color: var(--basic-white);
+  border: 2px solid var(--basic-white);
+  width: 137px;
+  height: 36px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+/* Hotel results */
+.hotel-results-found {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotel-results-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sort-by {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.price {
+  color: var(--basic-lightblue);
+}
+
+.category {
+  border-bottom: 1px dashed var(--basic-black);
+  color: var(--basic-black);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.category:hover {
+  border-bottom: 1px dashed var(--basic-lightblue);
+  color: var(--basic-lightblue);
+  opacity: 1;
+}
+
+.category:focus {
+  border-bottom: none;
+  color: var(--basic-black);
+  opacity: 1;
+}
+
+.hotel-results-item {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  border: 1px solid var(--special-deep-lightgrey);
+}
+
+.hotel-header {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotel-rating {
+  background-color: var(--basic-lightgrey);
+  width: 110px;
+  height: 27px;
+}
+
+.hotel-browse {
+  width: 110px;
+  height: 27px;
+  background-color: var(--basic-lightblue);
+  color: var(--basic-white);
+  font-weight: 700;
+}
+
+.hotel-browse:hover {
+  background-color: var(--special-extra-lightblue);
+}
+
+.hotel-browse:focus {
+  background-color: var(--special-deep-lightblue);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.hotel-book {
+  width: 142px;
+  height: 27px;
+  background-color: var(--basic-dark);
+  color: var(--basic-white);
+  font-weight: 700;
+}
+
+.hotel-book:hover {
+  background-color: var(--special-deep-dark);
+  mix-blend-mode: normal;
+  opacity: 0.3;
 }
 
 /* Footer */
@@ -188,6 +353,8 @@ img {
 
 .footer-socials ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .social-button {
@@ -202,6 +369,8 @@ img {
 
 .social-button:focus {
   background-color: var(--special-deep-lightblue);
+  mix-blend-mode: normal;
+  opacity: 0.3;
 }
 
 .footer-copyright {
