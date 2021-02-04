@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -29,13 +29,15 @@
       <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p class="description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <section class="features">
-        <h2>Достоинства Седоны</h2>
+        <h2 class="hidden">Достоинства Седоны</h2>
         <ul class="features-list">
-          <li class="feature-item">
-            <h3>Настоящий городок</h3>
-            <p>— №1 —</p>
-            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="img/everyday-life.jpg" width="800" height="256" alt="Повседневная жизнь в Седоне">
+          <li class="feature-item first">
+            <div class="feature-description">
+              <h3>Настоящий городок</h3>
+              <p>— №1 —</p>
+              <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <img class="feature-image" src="img/everyday-life.jpg" width="800" height="256" alt="Повседневная жизнь в Седоне">
             <ul class="subfeatures-list">
               <li class="subfeatures-item">
                 <img src="img/icon-1.svg" width="75" height="72" alt="Иконка дома">
@@ -54,11 +56,13 @@
               </li>
             </ul>
           </li>
-          <li class="feature-item">
-            <h3>Там есть Мост дьявола</h3>
-            <p> — №2 —</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            <img src="img/devil-bridge.jpg" width="800" height="256" alt="Мост Дьявола">
+          <li class="feature-item second">
+            <div class="feature-description">
+              <h3>Там есть Мост дьявола</h3>
+              <p> — №2 —</p>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+            <img class="feature-image" src="img/devil-bridge.jpg" width="800" height="256" alt="Мост Дьявола">
           </li>
           <li class="feature-item-no-pic">
             <h3>Небольшая площадь</h3>
@@ -78,9 +82,9 @@
         </ul>
       </section>
       <section class="hotel">
-        <h2>Поиск гостиницы в Седоне</h2>
         <p><strong class="hotel-interest">Заинтересовались?</strong></p>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+        <p class="clarification">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+        <h2>Поиск гостиницы в Седоне</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
           <p>Дата заезда: <input type="date" name="arrival" value="2017-04-24"></p>
           <p>Дата выезда: <input type="date" name="departure" value="2017-07-04"></p>
@@ -96,12 +100,12 @@
 
     <footer class="main-footer">
       <section class="footer-contacts">
-        <h2>Контакты</h2>
+        <h2 class="hidden">Контакты</h2>
         <p>#visitsedona</p>
         <p>тел: <a href="tel:+74956660166">+7 (495) 666-01-66</a></p>
       </section>
       <section class="footer-socials">
-        <h2>Мы в социальных сетях</h2>
+        <h2 class="hidden">Мы в социальных сетях</h2>
         <ul>
           <li>
             <a class="social-button" href="#"><span>Twitter</span>
