@@ -167,6 +167,7 @@ img {
   padding: 0;
   padding-left: 120px;
   padding-right: 120px;
+  padding-top: 47px;
 }
 
 .feature-item {
@@ -181,7 +182,6 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
 }
 
 .second {
@@ -191,7 +191,6 @@ img {
 }
 
 .feature-description {
-  margin: auto;
   flex-basis: 400px;
 }
 
