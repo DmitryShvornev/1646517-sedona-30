@@ -32,9 +32,6 @@
   background-image: url("../img/index-background.jpg");
   background-repeat: no-repeat;
   min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
 }
 
 .main-header {
@@ -112,8 +109,7 @@ img {
 .main-definition {
   font-size: 21px;
   line-height: 26px;
-  margin-left: 365px;
-  margin-right: 365px;
+  padding: 0 365px;
 }
 
 .main-description {
@@ -126,6 +122,7 @@ img {
 /* Main navigation */
 
 .main-navigation {
+  position: relative;
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
@@ -159,12 +156,12 @@ img {
 
 .site-navigation-item {
   width: 25%;
+  box-sizing: border-box;
 }
 
 .site-navigation-item:nth-child(1) {
   text-align: left;
-  position: relative;
-  left: 72px;
+  padding-left: 72px;
 }
 
 .site-navigation-item:nth-child(2) {
@@ -177,14 +174,12 @@ img {
 
 .site-navigation-item:nth-child(4) {
   text-align: right;
-  position: relative;
-  right: 72px;
+  padding-right: 72px;
 }
 
 .site-navigation-item:nth-child(5) {
   text-align: left;
-  position: relative;
-  left: 72px;
+  padding-left: 72px;
 }
 
 .site-navigation-item:nth-child(6) {
@@ -197,8 +192,7 @@ img {
 
 .site-navigation-item:nth-child(8) {
   text-align: right;
-  position: relative;
-  right: 72px;
+  padding-right: 72px;
 }
 
 /* Features */
@@ -339,40 +333,12 @@ img {
 
 /* Hotel search */
 
-.hotel h2 {
-  background-color: var(--basic-dark);
-  color: var(--basic-white);
-  font-size: 21px;
-  line-height: 26px;
-  width: 568px;
-  height: 86px;
-  padding: 0;
-  padding-top: 30px;
-  padding-left: 125px;
-  padding-right: 125px;
-  padding-bottom: 30px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-.hotel h2:hover {
-  background-color: var(--special-extra-dark);
-  color: var(--basic-white);
-  font-size: 21px;
-  line-height: 26px;
-}
-
-.hotel h2:focus {
-  background-color: var(--special-deep-dark);
-  color: var(--basic-white);
-  font-size: 21px;
-  line-height: 26px;
-  mix-blend-mode: normal;
-  opacity: 0.3;
-}
-
 .hotel {
-  margin-top: 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 58px;
+  padding-bottom: 78px;
   color: var(--special-black);
   font-size: 14px;
   font-weight: 700;
@@ -385,26 +351,48 @@ img {
 }
 
 .clarification {
-  margin: auto;
-  margin-bottom: 24px;
   font-weight: 400;
   width: 435px;
   height: 95px;
 }
 
+.hotel-search {
+  background-color: var(--basic-dark);
+  color: var(--basic-white);
+  font-size: 21px;
+  line-height: 26px;
+  width: 568px;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+.hotel-search:hover {
+  background-color: var(--special-extra-dark);
+  color: var(--basic-white);
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotel-search:focus {
+  background-color: var(--special-deep-dark);
+  color: var(--basic-white);
+  font-size: 21px;
+  line-height: 26px;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
 
 .hotel-find-button {
   color: var(--basic-white);
   background-color: var(--basic-lightblue);
   border: none;
-  width: 458px;
-  height: 58px;
+  padding: 16px 181px;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  margin-bottom: 55px;
   text-transform: uppercase;
-  margin-bottom: 133px;
 }
 
 .hotel-find-button:hover{
@@ -416,6 +404,8 @@ img {
   mix-blend-mode: normal;
   opacity: 0.3;
 }
+
+
 
 /* Hotel filter */
 
@@ -650,14 +640,17 @@ img {
 .main-footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
 }
+
 
 .footer-contacts {
   color: var(--basic-black);
   font-size: 21px;
   line-height: 26px;
+  width: 33.3%;
+  box-sizing: border-box;
 }
 
 .footer-contacts a {
@@ -668,6 +661,9 @@ img {
 .footer-socials {
   margin: 0;
   padding: 0;
+  width: 33.3%;
+  padding-left: 125px;
+  box-sizing: border-box;
 }
 
 .footer-socials ul {
@@ -702,9 +698,12 @@ img {
 }
 
 .footer-copyright {
+  display: block;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
+  width: 33.3%;
+  box-sizing: border-box;
 }
 
 .footer-copyright a {
