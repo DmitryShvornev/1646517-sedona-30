@@ -30,6 +30,7 @@
   text-transform: uppercase;
   background-color: var(--basic-white);
   background-image: url("../img/index-background.jpg");
+  background-position-y: 56px;
   background-repeat: no-repeat;
   min-height: 100%;
 }
@@ -39,6 +40,7 @@
   background-image: url("../img/welcome.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-position-y: 133px;
 }
 
 .main-header-logo{
@@ -106,10 +108,16 @@ img {
   --special-deep-grey: #666666;
 }
 
+.cutter {
+  position: absolute;
+  transform: translateX(-50%) translateY(452px);
+}
+
 .main-definition {
   font-size: 21px;
   line-height: 26px;
   padding: 0 365px;
+  padding-top: 43px;
 }
 
 .main-description {
@@ -200,7 +208,7 @@ img {
 .features-list {
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 33.3% 33.3% 33.4%;
   margin: 0;
   padding: 0;
 }
@@ -227,12 +235,15 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .second {
   grid-column: 1 / -1;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .feature-description {
@@ -382,6 +393,141 @@ img {
   opacity: 0.3;
 }
 
+.hotel-form {
+  display: flex;
+  flex-direction: column;
+  color: var(--basic-black);
+  align-items: flex-end;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  width: 568px;
+}
+
+.hotel-form p{
+  margin: 0;
+  margin-right: 55px;
+}
+
+.hotel-form p:first-child {
+  margin-top: 55px;
+}
+
+.hotel-form p:nth-child(2) {
+  margin-top: 35px;
+}
+
+.hotel-form p:nth-child(3) {
+  margin-top: 30px;
+}
+
+.hotel-form-arrival {
+  margin-right: 23px;
+}
+
+.hotel-form-departure {
+  margin-right: 20px;
+}
+
+.hotel-input-date {
+  border: none;
+  text-transform: inherit;
+  color: var(--basic-black);
+  font-weight: 700;
+  background-color: var(--basic-lightgrey);
+  width: 346px;
+  height: 38px;
+  box-sizing: border-box;
+  padding-left: 13px;
+}
+
+.hotel-input-date::placeholder{
+  color: var(--basic-black);
+}
+
+
+.hotel-input-date:hover {
+  background-color: var(--special-extra-lightgrey);
+}
+
+.hotel-input-date:focus {
+  background-color: var(--basic-white);
+  border: 2px solid var(--special-deep-lightgrey);
+}
+
+.hotel-calendar {
+  position: absolute;
+  transform: translateX(316px) translateY(7px);
+}
+
+.hotel-calendar:hover path {
+  fill: var(--basic-black);
+}
+
+.hotel-calendar:focus path {
+  fill: var(--basic-lightblue);
+}
+
+.hotel-form-adults {
+  margin-right: 39px;
+}
+
+.hotel-counter-add {
+  position: absolute;
+  transform: translateX(89px) translateY(14px);
+}
+
+.hotel-counter-add:hover path {
+  fill: var(--basic-black);
+}
+
+.hotel-counter-add:focus path {
+  fill: var(--basic-lightblue);
+}
+
+.hotel-counter-del {
+  position: absolute;
+  transform: translateX(13px) translateY(18px);
+}
+
+.hotel-counter-del:hover rect {
+  fill: var(--basic-black);
+}
+
+.hotel-counter-del:focus rect {
+  fill: var(--basic-lightblue);
+}
+
+.hotel-form-counters input:first-of-type {
+  margin-right: 47px;
+}
+
+
+.hotel-form-children {
+  margin-right: 26px;
+}
+
+.hotel-input-people {
+  text-align: center;
+  width: 114px;
+  height: 38px;
+  box-sizing: border-box;
+  border: none;
+  font-weight: 700;
+  background-color: var(--basic-lightgrey);
+}
+
+.hotel-input-people::placeholder{
+  color: var(--basic-black);
+}
+
+.hotel-input-people:hover {
+  background-color: var(--special-extra-lightgrey);
+}
+
+.hotel-input-people:focus {
+  background-color: var(--basic-white);
+  border: 2px solid var(--special-deep-lightgrey);
+}
+
 .hotel-find-button {
   color: var(--basic-white);
   background-color: var(--basic-lightblue);
@@ -391,7 +537,10 @@ img {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  margin-top: 54px;
   margin-bottom: 55px;
+  margin-right: 55px;
+  width: 458px;
   text-transform: uppercase;
 }
 
@@ -404,7 +553,6 @@ img {
   mix-blend-mode: normal;
   opacity: 0.3;
 }
-
 
 
 /* Hotel filter */
@@ -698,7 +846,10 @@ img {
 }
 
 .footer-copyright {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
@@ -716,4 +867,16 @@ img {
 
 .footer-copyright a:focus {
   color: var(--special-lightgrey);
+}
+
+.footer-copyright-logo {
+  padding-left: 8px;
+}
+
+.footer-copyright-logo:hover path {
+  fill: var(--basic-lightblue);
+}
+
+.footer-copyright-logo:focus path {
+  fill: var(--special-lightgrey);
 }
