@@ -208,7 +208,7 @@ img {
 .features-list {
   list-style: none;
   display: grid;
-  grid-template-columns: 33.3% 33.3% 33.4%;
+  grid-template-columns: 33.33% 33.33% 33.34%;
   margin: 0;
   padding: 0;
 }
@@ -216,10 +216,9 @@ img {
 .feature-item h3 {
   font-size: 21px;
   color: var(--basic-white);
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  padding-left: 120px;
-  padding-right: 120px;
+  max-width: 150px;
   padding-top: 47px;
 }
 
@@ -228,6 +227,7 @@ img {
   color: var(--basic-white);
   font-size: 14px;
   font-weight: 400;
+  text-align: center;
 }
 
 .first {
@@ -247,7 +247,7 @@ img {
 }
 
 .feature-description {
-  flex-basis: 400px;
+  width: 33.33%;
 }
 
 .feature-image {
@@ -266,7 +266,6 @@ img {
   padding: 25px 49px;
 }
 
-
 .second .feature-description {
   order: 2;
 }
@@ -274,10 +273,9 @@ img {
 .feature-item-no-pic h3 {
   font-size: 21px;
   color: var(--basic-black);
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  padding-left: 125px;
-  padding-right: 125px;
+  max-width: 150px;
 }
 
 .feature-item-no-pic {
@@ -307,9 +305,10 @@ img {
 .subfeatures-item h3 {
   font-size: 21px;
   color: var(--basic-black);
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   padding-top: 160px;
+  max-width: 150px;
 }
 
 .subfeatures-item {
@@ -327,19 +326,19 @@ img {
 .housing {
   background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
-  background-position: 162px 60px;
+  background-position: center 60px;
 }
 
 .food {
   background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
-  background-position: 162px 61px;
+  background-position: center 61px;
 }
 
 .souvenirs {
   background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
-  background-position: 162px 55px;
+  background-position: center 55px;
 }
 
 /* Hotel search */
@@ -402,21 +401,27 @@ img {
   width: 568px;
 }
 
-.hotel-form p{
+.hotel-form article{
   margin: 0;
   margin-right: 55px;
+  margin-left: 55px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.hotel-form p:first-child {
+.hotel-form article:first-child {
   margin-top: 55px;
 }
 
-.hotel-form p:nth-child(2) {
+.hotel-form article:nth-child(2) {
   margin-top: 35px;
 }
 
-.hotel-form p:nth-child(3) {
+.hotel-form article:nth-child(3) {
   margin-top: 30px;
+  margin-left: 0px;
 }
 
 .hotel-form-arrival {
@@ -443,7 +448,6 @@ img {
   color: var(--basic-black);
 }
 
-
 .hotel-input-date:hover {
   background-color: var(--special-extra-lightgrey);
 }
@@ -451,28 +455,42 @@ img {
 .hotel-input-date:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--special-deep-lightgrey);
+  outline: none;
 }
 
 .hotel-calendar {
   position: absolute;
-  transform: translateX(316px) translateY(7px);
+  transform: translateX(313px) translateY(6px);
+  border: none;
+  background-color: transparent;
 }
 
 .hotel-calendar:hover path {
   fill: var(--basic-black);
 }
 
+.hotel-calendar:focus{
+  outline: none;
+}
+
 .hotel-calendar:focus path {
   fill: var(--basic-lightblue);
 }
 
+
 .hotel-form-adults {
-  margin-right: 39px;
+  margin-right: 42px;
 }
 
 .hotel-counter-add {
   position: absolute;
-  transform: translateX(89px) translateY(14px);
+  transform: translateX(87px) translateY(11px);
+  border: none;
+  background-color: transparent;
+}
+
+.hotel-counter-add:focus {
+  outline: none;
 }
 
 .hotel-counter-add:hover path {
@@ -485,7 +503,13 @@ img {
 
 .hotel-counter-del {
   position: absolute;
-  transform: translateX(13px) translateY(18px);
+  transform: translateX(5px) translateY(7px);
+  border: none;
+  background-color: transparent;
+}
+
+.hotel-counter-del:focus {
+  outline: none;
 }
 
 .hotel-counter-del:hover rect {
@@ -496,10 +520,9 @@ img {
   fill: var(--basic-lightblue);
 }
 
-.hotel-form-counters input:first-of-type {
-  margin-right: 47px;
+.hotel-counter-wrapper:first-of-type input {
+  margin-right: 53px;
 }
-
 
 .hotel-form-children {
   margin-right: 26px;
@@ -526,6 +549,7 @@ img {
 .hotel-input-people:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--special-deep-lightgrey);
+  outline: none;
 }
 
 .hotel-find-button {
