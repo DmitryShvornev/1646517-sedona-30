@@ -23,7 +23,6 @@
           <li class="site-navigation-item"><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
-      <img class="cutter" src="img/cutter.svg" width="1200" height="57" alt="">
     </header>
 
     <main class="main-content">
@@ -85,7 +84,7 @@
         <h2 class="hidden">Поиск гостиницы в Седоне</h2>
         <a class="hotel-search" href="form.html">Поиск гостиницы в Седоне</a>
         <form class="hotel-form" method="get" action="https://echo.htmlacademy.ru">
-          <article>
+          <div class="hotel-field">
             <label class="hotel-form-arrival" for="arrival">Дата заезда:</label>
             <div>
               <button class="hotel-calendar">
@@ -96,8 +95,8 @@
               </button>
               <input class="hotel-input-date" type="text" id="arrival" placeholder="24 апреля 2017">
             </div>
-          </article>
-          <article>
+          </div>
+          <div class="hotel-field">
             <label class="hotel-form-departure" for="departure">Дата выезда:</label>
             <div>
               <button class="hotel-calendar">
@@ -108,8 +107,8 @@
               </button>
               <input class="hotel-input-date" type="text" id="departure" placeholder="4 июля 2017">
             </div>
-          </article>
-          <article class="hotel-form-counters">
+          </div>
+          <div class="hotel-field">
             <label class="hotel-form-adults" for="adults">Взрослые:</label>
             <div class="hotel-counter-wrapper">
               <button class="hotel-counter-add">
@@ -138,7 +137,7 @@
               </button>
               <input class="hotel-input-people" type="text" id="children" placeholder="0">
             </div>
-          </article>
+          </div>
           <button class="hotel-find-button" type="submit">Найти</button>
         </form>
       </section>
