@@ -659,7 +659,7 @@ img {
 .cost-per-day {
   padding-left: 348px;
   padding-right: 73px;
-  align-items: center;*/
+  align-items: center;
 }
 
 .range-filter {
@@ -861,23 +861,22 @@ img {
   grid-column: 1 / -1;
   display: flex;
   justify-content: flex-start;
-  position: relative;
+  padding-right: 87px;
 }
 
 .button-up {
-  position: absolute;
-  top: 35px;
-  left: 1069px;
+  margin-right: 11px;
+  margin-top: 30px;
   border: none;
   background: none;
   cursor: pointer;
 }
 
-.button-up:disabled path {
+.button-up path {
   fill: var(--special-lightgrey);
 }
 
-.button-up:enabled:hover path {
+.button-up:hover path {
   fill: var(--basic-black);
 }
 
@@ -885,48 +884,44 @@ img {
   outline: none;
 }
 
-.button-up:enabled:active path {
+.button-up:active path {
   fill: var(--basic-lightblue);
 }
 
 .button-down {
-  position: absolute;
-  top: 35px;
-  left: 1092px;
+  margin-top: 30px;
   border: none;
   background: none;
   cursor: pointer;
 }
 
-.button-down:disabled path {
-  fill: var(--special-lightgrey);
+.button-down path {
+  fill: var(--basic-lightblue);
 }
 
 .button-down:focus {
   outline: none;
 }
 
-.button-down:enabled:active path {
-  fill: var(--basic-lightblue);
-}
-
-.button-down:enabled:hover path {
+.button-down:hover path {
   fill: var(--basic-black);
 }
 
+.button-down:active path {
+  fill: var(--basic-lightblue);
+}
 
 .hotel-results-sort {
   list-style: none;
   margin: 0;
   padding: 0;
   padding-left: 46px;
-  padding-right: 610px;
   padding-top: 31px;
   padding-bottom: 31px;
   display: flex;
   flex-direction: row;
   flex-grow: 1;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .sort-by {
@@ -937,11 +932,17 @@ img {
   line-height: 18px;
 }
 
+.hotel-results-sort li:first-child {
+  margin-left: 0;
+}
+
 .price {
+  margin-left: 40px;
   color: var(--basic-lightblue);
 }
 
 .category {
+  margin-left: 40px;
   border-bottom: 1px dashed var(--basic-black);
   color: var(--basic-black);
   mix-blend-mode: normal;
