@@ -40,6 +40,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 133px;
+  min-height: 564px;
 }
 
 .main-header-logo{
@@ -125,6 +126,8 @@ img {
   line-height: 26px;
   padding: 0 365px;
   padding-top: 44.5px;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .main-description {
@@ -132,6 +135,7 @@ img {
   font-weight: 400;
   padding-bottom: 51px;
   padding-top: 17px;
+  margin: 0;
 }
 
 /* Main navigation */
@@ -150,7 +154,7 @@ img {
   position: absolute;
   width: 1200px;
   height: 57px;
-  top: 508px;
+  top: 507px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -392,15 +396,18 @@ img {
 }
 
 .hotel-interest {
+  margin: 0;
+  margin-bottom: 36px;
   color: var(--basic-black);
   font-size: 30px;
   line-height: 24px;
 }
 
 .clarification {
+  margin: 0;
   font-weight: 400;
   width: 435px;
-  height: 95px;
+  margin-bottom: 46px;
 }
 
 .hotel-search {
