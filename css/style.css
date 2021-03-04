@@ -675,6 +675,7 @@ img {
   border: 2px solid var(--basic-white);
   width: 317px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .price-controls::before {
@@ -919,7 +920,7 @@ img {
   padding: 0;
   padding-left: 46px;
   padding-top: 29px;
-  padding-bottom: 36px;
+  padding-bottom: 34px;
   display: flex;
   flex-direction: row;
   flex-grow: 1;
@@ -1163,7 +1164,7 @@ a .hotel-header:active {
   padding-left: 56px;
   padding-right: 55px;
   padding-top: 20px;
-  padding-bottom: 28px;
+  padding-bottom: 35px;
   box-sizing: border-box;
 }
 
