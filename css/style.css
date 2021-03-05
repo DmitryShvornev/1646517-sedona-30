@@ -535,9 +535,7 @@ img {
   background-color: transparent;
 }
 
-.hotel-counter-add:focus {
-  outline: none;
-}
+
 
 .hotel-counter-add:hover path {
   fill: var(--basic-black);
@@ -556,9 +554,7 @@ img {
   background-color: transparent;
 }
 
-.hotel-counter-del:focus {
-  outline: none;
-}
+
 
 .hotel-counter-del:hover rect {
   fill: var(--basic-black);
@@ -789,6 +785,11 @@ img {
   border-radius: 5px;
 }
 
+.filter-input-checkbox:focus + label::before {
+  outline: 2px solid black;
+}
+
+
 .filter-input-checkbox:disabled + label::before {
   content: "";
   position: absolute;
@@ -887,6 +888,10 @@ img {
   outline: none;
 }
 
+.button-up:focus svg {
+  outline: 2px solid black;
+}
+
 .button-up:active path {
   fill: var(--basic-lightblue);
 }
@@ -902,12 +907,16 @@ img {
   fill: var(--basic-lightblue);
 }
 
+.button-down:hover path {
+  fill: var(--basic-black);
+}
+
 .button-down:focus {
   outline: none;
 }
 
-.button-down:hover path {
-  fill: var(--basic-black);
+.button-down:focus svg {
+  outline: 2px solid black;
 }
 
 .button-down:active path {
