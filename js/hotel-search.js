@@ -45,6 +45,7 @@ hotelForm.addEventListener("submit", function (evt) {
   }
 });
 
-if (loginPopup.classList.contains("hotel-form-error")) {
+
+if (hotelForm.classList.contains("hotel-form-error")) {
   hotelForm.classList.remove("hotel-form-error");
 }
