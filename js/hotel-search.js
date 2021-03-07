@@ -25,9 +25,6 @@ hotelSearch.addEventListener('click', function (evt) {
   if (adults && children) {
     hotelFormAdults.value = adults;
     hotelFormChildren.value = children;
-    hotelFormArrival.focus();
-  } else {
-    hotelFormArrival.focus();
   }
 });
 

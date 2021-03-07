@@ -624,6 +624,10 @@ img {
   margin-bottom: -119px;
 }
 
+.map iframe {
+  border: none;
+}
+
 
 /* Hotel filter */
 
