@@ -1,14 +1,14 @@
 /* Fonts */
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/PTSans.woff2") format("woff2"), url("../fonts/PTSans.woff") format("woff");
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/PTSans-Bold.woff2") format("woff2"), url("../fonts/PTSans-Bold.woff") format("woff");
+  src: url("../fonts/ptsans-bold.woff2") format("woff2"), url("../fonts/ptsans-bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -622,6 +622,7 @@ img {
 
 .map {
   margin-bottom: -119px;
+  background-image: url("../img/map.png");
 }
 
 .map iframe {
@@ -1229,6 +1230,8 @@ a .hotel-header:active {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  grid-gap: 6px;
   justify-content: center;
   flex-direction: row;
   align-items: center;
@@ -1244,7 +1247,6 @@ a .hotel-header:active {
   background-color: var(--basic-lightblue);
   color: var(--basic-white);
   text-decoration: none;
-  margin: 0 3px;
 }
 
 .social-button:hover {
@@ -1299,7 +1301,7 @@ a .hotel-header:active {
 
 @keyframes bounce {
   0% {
-    transform: translateX(-50%) translateY(-2000px);
+    transform: translateX(-50%) translateY(-309px);
   }
 
   70% {
