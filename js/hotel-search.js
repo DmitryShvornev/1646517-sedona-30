@@ -22,7 +22,7 @@ hotelSearch.addEventListener('click', function (evt) {
   evt.preventDefault();
   hotelForm.classList.remove('hotel-form-hide');
   hotelForm.classList.add('hotel-form-show');
-  if (storage) {
+  if (adults && children) {
     hotelFormAdults.value = adults;
     hotelFormChildren.value = children;
     hotelFormArrival.focus();
