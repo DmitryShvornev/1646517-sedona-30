@@ -20,6 +20,7 @@ hotelForm.classList.add('hotel-form-hide');
 
 hotelSearch.addEventListener('click', function (evt) {
   evt.preventDefault();
+  hotelForm.classList.remove("hotel-form-error");
   hotelForm.classList.toggle('hotel-form-show');
   if (adults && children) {
     hotelFormAdults.value = adults;
