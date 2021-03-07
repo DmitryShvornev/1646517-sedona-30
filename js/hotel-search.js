@@ -34,6 +34,8 @@ hotelSearch.addEventListener('click', function (evt) {
 hotelForm.addEventListener("submit", function (evt) {
   if (!hotelFormArrival.value || !hotelFormDeparture.value || !hotelFormAdults.value || !hotelFormChildren.value) {
     evt.preventDefault();
+    hotelForm.classList.remove("hotel-form-error");
+    hotelForm.offsetWidth = hotelForm.offsetWidth;
     hotelForm.classList.add("hotel-form-error");
   } else {
     if (isStorageSupport) {
