@@ -85,6 +85,10 @@ img {
   background-color: var(--basic-lightgrey);
 }
 
+.catalog-page {
+  min-height: 100%;
+}
+
 .hidden {
   position: absolute;
   width: 1px;
@@ -394,7 +398,7 @@ img {
   margin: 0;
   font-weight: 400;
   width: 435px;
-  margin-bottom: 46px;
+  margin-bottom: 43px;
 }
 
 .hotel-search {
@@ -403,7 +407,7 @@ img {
   font-size: 21px;
   line-height: 26px;
   width: 568px;
-  margin-top: 2px;
+  margin-top: 3px;
   padding-left: 0;
   padding-right: 0;
   padding-top: 31px;
@@ -1193,7 +1197,7 @@ a .hotel-header:active {
   padding-left: 56px;
   padding-right: 55px;
   padding-top: 20px;
-  padding-bottom: 35px;
+  padding-bottom: 45px;
   box-sizing: border-box;
 }
 
