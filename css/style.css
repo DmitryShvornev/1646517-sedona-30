@@ -32,6 +32,9 @@
   background-image: url("../img/index-background.jpg");
   background-position-y: 56px;
   background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100%;
 }
 
 .main-header {
@@ -85,9 +88,6 @@ img {
   background-color: var(--basic-lightgrey);
 }
 
-.catalog-page {
-  min-height: 100%;
-}
 
 .hidden {
   position: absolute;
